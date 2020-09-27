@@ -14,9 +14,9 @@ const Header = ({siteTitle}) => (
             </div>
         </Link>
         <nav className={headerStyles.nav}>
-            <Link to='docs/install'>Install</Link>
-            <Link to='docs/quick-start'>Documentation</Link>
-            <Link to='docs/examples'>Examples</Link>
+            <Link to='/docs/install'>Install</Link>
+            <Link to='/docs/quick-start'>Documentation</Link>
+            <Link to='/docs/examples'>Examples</Link>
             <a href='https://github.com/michalmarchewczyk/tsnodes'>GitHub</a>
         </nav>
     </header>
