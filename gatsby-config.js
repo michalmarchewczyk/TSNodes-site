@@ -7,13 +7,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,5 +22,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
   ],
 }
