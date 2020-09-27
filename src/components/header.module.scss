@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 1em);
+  height: 3.4em;
+  font-size: 0.75em;
+  color: #4d4d4d;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  width: 10em;
+  height: 3.4em;
+  overflow: hidden;
+  img {
+    position: absolute;
+    width: 193px;
+    height: 70px;
+    top: -5px;
+    left: -5px;
+  }
+}
+
+
+.nav {
+  position: relative;
+  right: 0;
+  float: right;
+  padding-top: 1.1em;
+  a {
+    font-weight: 500;
+    margin-right: 0.7em;
+    margin-left: 0.7em;
+    padding: 0.5em;
+    border-radius: 4px;
+    background: rgba(0,0,0,0);
+    transition: background 0.05s linear;
+    &:hover{
+      background: rgba(0,0,0,0.1);
+    }
+  }
+}
