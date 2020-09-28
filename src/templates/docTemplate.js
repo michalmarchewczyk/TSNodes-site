@@ -1,22 +1,37 @@
-import React from 'react'
-import {graphql} from 'gatsby'
+import React from 'react';
+import {graphql} from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import LeftMenu from '../components/leftMenu';
+import MenuLink from '../components/menuLink';
+
+import docTemplateStyles from './docTemplate.module.scss';
 
 
 const Template = ({data}) => {
-    const {markdownRemark} = data
-    const {frontmatter, html} = markdownRemark
+    const {markdownRemark} = data;
+    const {frontmatter, html} = markdownRemark;
     
     return (
         <Layout>
             <SEO title={`${frontmatter.title} - Documentation`}/>
-            <div
-                dangerouslySetInnerHTML={{__html: html}}
-            />
+            <LeftMenu>
+                <MenuLink to={`/docs/quick-start`} text='Quick start'/>
+                <MenuLink to={`/docs/install`} text='Installation'/>
+                <MenuLink to={`/docs/setup`} text='Editor setup'/>
+                <MenuLink to={`/docs/nodes`} text='Creating nodes'/>
+                <MenuLink to={`/docs/inputs`} text='Adding inputs'/>
+                <MenuLink to={`/docs/outputs`} text='Adding outputs'/>
+            </LeftMenu>
+            <div className={docTemplateStyles.container}>
+                <div
+                    className={docTemplateStyles.content}
+                    dangerouslySetInnerHTML={{__html: html}}
+                />
+            </div>
         </Layout>
-    )
-}
+    );
+};
 
 export default Template;
 
@@ -30,4 +45,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

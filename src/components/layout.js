@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import {graphql, useStaticQuery} from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import {graphql, useStaticQuery} from 'gatsby';
 
-import Header from './header'
-import layoutStyles from './layout.module.scss'
+import Header from './header';
+import layoutStyles from './layout.module.scss';
 import Footer from './footer';
 
 
@@ -28,11 +28,11 @@ const Layout = ({children}) => {
             
             <Footer/>
         </div>
-    )
-}
+    );
+};
 
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

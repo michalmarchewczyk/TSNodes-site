@@ -1,0 +1,45 @@
+.container {
+  display: block;
+  position: relative;
+  left: 14em;
+  //outline: 1px solid red;
+  width: calc(100% - 24em);
+  top: 2em;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.2);
+  padding: 1em 3em 3em;
+  margin-bottom: 10em;
+}
+
+
+.content {
+  font-size: 0.8em;
+  color: #333333;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      background: #aaaaaa;
+      top: 0.5em;
+      height: 2px;
+      width: 100%;
+    }
+  }
+
+  p, ol, ul {
+    font-size: 1.05em;
+    color: #444444;
+  }
+  ol, ul {
+    padding-left: 1em;
+  }
+}

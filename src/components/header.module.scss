@@ -8,13 +8,14 @@
   color: #4d4d4d;
   padding-left: 1em;
   padding-right: 1em;
-  z-index: 100;
-  background: rgba(255,255,255,0);
-  box-shadow: 0 -40px 20px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 -40px 20px 20px rgba(0, 0, 0, 0.3);
   transition: background 0.1s linear, box-shadow 0.1s linear;
+
   &:not([data-scroll="0"]) {
     background: white;
-    box-shadow: 0 -20px 20px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 -20px 20px 20px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -24,6 +25,7 @@
   width: 10em;
   height: 3.4em;
   overflow: hidden;
+
   img {
     position: absolute;
     width: 193px;
@@ -39,16 +41,18 @@
   right: 0;
   float: right;
   padding-top: 1.1em;
+
   a {
     font-weight: 500;
     margin-right: 0.6em;
     margin-left: 0.6em;
     padding: 0.5em;
-    border-radius: 4px;
-    background: rgba(0,0,0,0);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0);
     transition: background 0.05s linear;
-    &:hover{
-      background: rgba(0,0,0,0.1);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
     }
   }
 }

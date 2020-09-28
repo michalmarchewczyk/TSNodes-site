@@ -1,0 +1,15 @@
+.menuLink {
+  display: block;
+  position: relative;
+  margin: 0.8em 0.8em;
+  background: rgba(0,0,0,0);
+  transition: background 0.05s linear;
+  padding: 0.5em 0.8em;
+  border-radius: 6px;
+  font-size: 0.9em;
+  color: #666666;
+  text-align: right;
+  &:hover {
+    background: rgba(0,0,0,0.1);
+  }
+}

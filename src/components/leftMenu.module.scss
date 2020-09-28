@@ -1,0 +1,13 @@
+
+.leftMenu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10em;
+  height: 100vh;
+  box-shadow: -12px 0 12px 12px rgba(0,0,0,0.3);
+  background: white;
+  padding-top: 3em;
+  z-index: 100;
+}

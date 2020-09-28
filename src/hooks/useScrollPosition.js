@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import {useEffect, useState} from 'react';
+
 
 const useScrollPosition = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -8,17 +9,17 @@ const useScrollPosition = () => {
             
             window.requestAnimationFrame(function () {
                 setScrollPosition(window.scrollY);
-            })
-        }
-        window.addEventListener('scroll', handleScroll)
+            });
+        };
+        window.addEventListener('scroll', handleScroll);
         
         return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    })
+            window.removeEventListener('scroll', handleScroll);
+        };
+    });
     
-    return scrollPosition
-}
+    return scrollPosition;
+};
 
 
-export default useScrollPosition
+export default useScrollPosition;

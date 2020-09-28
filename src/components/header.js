@@ -1,9 +1,9 @@
-import {Link} from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import {Link} from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
 import logo from '../images/logo.png';
 
-import headerStyles from './header.module.scss'
+import headerStyles from './header.module.scss';
 import useScrollPosition from '../hooks/useScrollPosition';
 
 
@@ -12,7 +12,7 @@ const Header = ({siteTitle, scroll}) => {
     let scrollY = useScrollPosition();
     
     return (
-        <header className={headerStyles.header} data-scroll={scroll? scrollY : 0}>
+        <header className={headerStyles.header} data-scroll={scroll ? scrollY : 0}>
             <Link to='/'>
                 <div className={headerStyles.logo}>
                     <img src={logo} alt={siteTitle}/>
@@ -25,15 +25,15 @@ const Header = ({siteTitle, scroll}) => {
                 <a href='https://github.com/michalmarchewczyk/tsnodes'>GitHub</a>
             </nav>
         </header>
-    )
-}
+    );
+};
 
 Header.propTypes = {
     siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
     siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
