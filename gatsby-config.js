@@ -7,13 +7,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,7 +14,25 @@ module.exports = {
         path: `${__dirname}/src/pages/docs`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              languageExtensions: [],
+              escapeEntities: {},
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sass`,
   ],
 }
