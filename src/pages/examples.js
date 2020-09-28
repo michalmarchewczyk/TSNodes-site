@@ -1,14 +1,13 @@
 import React from 'react';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 
-const IndexPage = () => (
+const Examples = () => (
     <Layout>
-        <SEO title='Home'/>
-        
+        <SEO title='Examples'/>
+    
     </Layout>
 );
 
-export default IndexPage;
+export default Examples;

@@ -23,12 +23,12 @@ const Template = ({data}) => {
                 <MenuLink to={`/docs/inputs`} text='Adding inputs'/>
                 <MenuLink to={`/docs/outputs`} text='Adding outputs'/>
             </LeftMenu>
-            <div className={docTemplateStyles.container}>
+            <article className={docTemplateStyles.container}>
                 <div
                     className={docTemplateStyles.content}
                     dangerouslySetInnerHTML={{__html: html}}
                 />
-            </div>
+            </article>
         </Layout>
     );
 };
