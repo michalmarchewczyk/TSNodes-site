@@ -1,13 +1,23 @@
 import React from 'react';
 
+import {Link} from 'gatsby';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import NotFoundStyles from './404.module.scss';
 
 const NotFoundPage = () => (
     <Layout>
-        <SEO title='404: Not found'/>
-        <h1>404: Not Found</h1>
+        <SEO title='404 Not found'/>
+        <div className={NotFoundStyles.container}>
+            <h1>404 Not Found</h1>
+            <p>
+                The page you are looking for doesn't exist or was moved to another address.
+                <br/>
+                Please go back to previous page, or go to <Link to='/' style={{fontWeight: 600}}>home page</Link>.
+            </p>
+        </div>
     </Layout>
 );
 
