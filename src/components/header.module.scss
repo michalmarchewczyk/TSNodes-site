@@ -2,12 +2,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100vw - 1em);
+  width: calc(100vw - 2em);
   height: 3.4em;
   font-size: 0.75em;
   color: #4d4d4d;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  z-index: 100;
+  background: rgba(255,255,255,0);
+  box-shadow: 0 -40px 20px 20px rgba(0,0,0,0.3);
+  transition: background 0.1s linear, box-shadow 0.1s linear;
+  &:not([data-scroll="0"]) {
+    background: white;
+    box-shadow: 0 -20px 20px 20px rgba(0,0,0,0.3);
+  }
 }
 
 .logo {
@@ -33,8 +41,8 @@
   padding-top: 1.1em;
   a {
     font-weight: 500;
-    margin-right: 0.7em;
-    margin-left: 0.7em;
+    margin-right: 0.6em;
+    margin-left: 0.6em;
     padding: 0.5em;
     border-radius: 4px;
     background: rgba(0,0,0,0);
