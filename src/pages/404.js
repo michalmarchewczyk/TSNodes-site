@@ -5,12 +5,12 @@ import {Link} from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import NotFoundStyles from './404.module.scss';
+import notFoundStyles from './404.module.scss';
 
 const NotFoundPage = () => (
     <Layout>
         <SEO title='404 Not found'/>
-        <div className={NotFoundStyles.container}>
+        <div className={notFoundStyles.container}>
             <h1>404 Not Found</h1>
             <p>
                 The page you are looking for doesn't exist or was moved to another address.
