@@ -8,7 +8,7 @@ import menuLinkStyles from './menuLink.module.scss';
 
 const MenuLink = ({to, text}) => {
     return (
-        <Link to={to} className={menuLinkStyles.menuLink}>
+        <Link to={to} className={menuLinkStyles.menuLink} activeClassName={menuLinkStyles.active}>
             {text}
         </Link>
     );

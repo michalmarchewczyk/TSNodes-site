@@ -9,19 +9,19 @@ import docTemplateStyles from './docTemplate.module.scss';
 
 
 const Template = ({data}) => {
-    const {markdownRemark} = data;
+    
+    const {markdownRemark, allMarkdownRemark} = data;
     const {frontmatter, html} = markdownRemark;
+    
+    let docPages = allMarkdownRemark.nodes;
     
     return (
         <Layout>
             <SEO title={`${frontmatter.title} - Documentation`}/>
             <LeftMenu>
-                <MenuLink to={`/docs/quick-start`} text='Quick start'/>
-                <MenuLink to={`/docs/install`} text='Installation'/>
-                <MenuLink to={`/docs/setup`} text='Editor setup'/>
-                <MenuLink to={`/docs/nodes`} text='Creating nodes'/>
-                <MenuLink to={`/docs/inputs`} text='Adding inputs'/>
-                <MenuLink to={`/docs/outputs`} text='Adding outputs'/>
+                {docPages.map(page => (
+                    <MenuLink to={page.frontmatter.path} text={page.frontmatter.title}/>
+                ))}
             </LeftMenu>
             <article className={docTemplateStyles.container}>
                 <div
@@ -42,6 +42,15 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+      }
+    }
+    allMarkdownRemark(sort: {fields: frontmatter___id, order: ASC}) {
+      nodes {
+        frontmatter {
+          path
+          title
+          id
+        }
       }
     }
   }

@@ -1,6 +1,7 @@
 ---
 path: "/docs/install"
 title: "Installation"
+id: 2
 ---
 
 # Installation 
