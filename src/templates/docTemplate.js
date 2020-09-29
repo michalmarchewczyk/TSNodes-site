@@ -20,7 +20,7 @@ const Template = ({data}) => {
             <SEO title={`${frontmatter.title} - Documentation`}/>
             <LeftMenu>
                 {docPages.map(page => (
-                    <MenuLink to={page.frontmatter.path} text={page.frontmatter.title}/>
+                    <MenuLink to={page.frontmatter.path} text={page.frontmatter.title} key={page.frontmatter.id}/>
                 ))}
             </LeftMenu>
             <article className={docTemplateStyles.container}>

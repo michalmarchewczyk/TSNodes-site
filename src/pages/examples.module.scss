@@ -10,7 +10,7 @@
     position: absolute;
     top: calc(50% - 10em);
     left: 10em;
-    width: 22em;
+    width: 18em;
     height: 14em;
 
     h2 {
@@ -42,14 +42,6 @@
       }
     }
 
-    a:not(:nth-child(2)) button {
-      background: rgba(0,0,0,0);
-      transition: background 0.05s linear;
-      color: #444444;
-      &:hover {
-        background: rgba(0,0,0,0.1);
-      }
-    }
 
   }
 
@@ -58,8 +50,8 @@
     position: absolute;
     bottom: 4em;
     //outline: 1px solid red;
-    right: 5em;
-    max-width: calc(100% - 30em);
+    right: 3em;
+    max-width: calc(100% - 32em);
     width: calc(100vh - 2em);
     height: calc(100vh - 10em);
   }
@@ -75,102 +67,97 @@
 
 }
 
+
+
 .section {
+  //outline: 1px solid blue;
   display: block;
   position: relative;
-  height: 22em;
-  //outline: 1px solid blue;
+  left: 9em;
+  width: calc(100vw - 18em);
+  margin-bottom: 6em;
+  margin-top: 2em;
 
-  div:first-child {
-    //outline: 1px solid red;
-    position: absolute;
-    top: 4em;
-    left: 10em;
-    width: 23em;
-    height: 14em;
-
-
-    h2 {
-      font-weight: 500;
-      font-size: 1.4em;
-      color: #444444;
-      margin-bottom: 1em;
-    }
-
-    p {
-      font-weight: 400;
-      font-size: 0.9em;
-      color: #444444;
-      margin-bottom: 1em;
-    }
+  h2 {
+    position: relative;
+    font-size: 1.65em;
+    font-weight: 500;
+    left: 0.6em;
+    color: #666666;
+    margin-top: 1em;
+    margin-bottom: 0.4em;
   }
 
-
-  div:nth-child(2) {
+  &::after {
+    content: "";
     display: block;
-    position: absolute;
-    top: 2em;
-    //outline: 1px solid red;
-    right: 8em;
-    width: 30em;
-    height: calc(100% - 4em);
+    clear: both;
   }
-
 }
 
-.container {
+
+
+.example {
   display: block;
   position: relative;
-  height: 25em;
-  margin-top: 4em;
-  margin-bottom: 4em;
-  left: 10em;
-  width: calc(100vw - 24em);
   background: white;
   border-radius: 12px;
   box-shadow: 4px 4px 16px rgba(0,0,0,0.2);
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 1em;
+  width: calc(50% - 6em);
+  min-width: 20em;
+  height: 15em;
+  margin: 1.4em 1em;
+  float: left;
+  color: #444444;
+  padding: 2.2em 2em;
 
-
-  div {
-    //outline: 1px solid red;
-    position: relative;
-    top: 2em;
-    width: (100% / 3);
-    float: left;
-    text-align: center;
-    color: #444444;
-
-    img {
-      width: 100%;
-    }
-
-    h3 {
-      margin-top: 0;
-      font-size: 1.4em;
-      margin-bottom: 1em;
-    }
-
-    p {
-      font-size: 0.9em;
-      padding-left: 3em;
-      padding-right: 3em;
-    }
-  }
-
-
-  h2 {
-    text-align: center;
-    color: #444444;
+  h3 {
     font-size: 1.4em;
-    margin-top: 0.6em;
+    font-weight: 500;
+    margin-top: 0;
   }
 
   p {
-    text-align: center;
-    color: #444444;
     font-size: 0.9em;
+    padding-right: 8em;
   }
+
+  div {
+    margin-top: 3em;
+
+    a {
+      display: inline-block;
+      position: relative;
+      outline: none;
+      border: none;
+      margin-right: 1em;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1em;
+      padding: 0.4em 1.3em;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    a:first-child {
+      background: rgb(29,114,242);
+      background: linear-gradient(300deg, rgba(29,114,242,1) 0%, rgba(59,173,255,1) 100%);
+      color: white;
+      transition: background 0.05s linear;
+      &:hover {
+        background: darken(rgb(29,114,242), 10);
+        background: linear-gradient(300deg, darken(rgba(29,114,242,1), 10) 0%, darken(rgba(59,173,255,1), 10) 100%);
+      }
+    }
+
+    a:not(:first-child)  {
+      background: rgba(0,0,0,0);
+      transition: background 0.05s linear;
+      color: #444444;
+      &:hover {
+        background: rgba(0,0,0,0.1);
+      }
+    }
+  }
+
+
 }
