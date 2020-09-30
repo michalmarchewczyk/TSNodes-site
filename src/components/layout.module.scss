@@ -15,12 +15,10 @@
   font-size: 24px;
   background: rgba(230, 230, 230, 1);
 
-  //@media screen and (max-width: 1800px){
-  //  font-size: 22px;
-  //}
-  //@media screen and (max-width: 1600px){
-  //  font-size: 20px;
-  //}
+  @media screen and (max-width: 1400px){
+    font-size: 22px;
+  }
+
   &::before {
     content: "";
     display: block;
