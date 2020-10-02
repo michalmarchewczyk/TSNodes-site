@@ -68,7 +68,7 @@ const Examples = () => (
                     Procedural graphics editor
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae massa et libero consectetur ultricies ut ac eros. Fusce eu luctus nulla. Sed congue vestibulum felis id pretium. Aenean commodo velit a urna laoreet, sed mattis lacus consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae massa et libero consectetur ultricies ut ac eros. Fusce eu luctus nulla. Sed congue vestibulum felis id pretium. Aenean commodo velit a urna laoreet, sed mattis lacus consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <div>
                     <a href='https://github.com/michalmarchewczyk'>
