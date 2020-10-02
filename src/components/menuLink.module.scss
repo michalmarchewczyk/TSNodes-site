@@ -12,6 +12,11 @@
   &:hover {
     background: rgba(0,0,0,0.1);
   }
+
+  @media screen and (max-width: 700px){
+    text-align: left;
+    margin: 0.8em 1.6em;
+  }
 }
 
 .active {

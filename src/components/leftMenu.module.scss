@@ -10,4 +10,19 @@
   background: white;
   padding-top: 4em;
   z-index: 100;
+
+  @media screen and (max-width: 800px){
+    font-size: 0.9em;
+  }
+
+  @media screen and (max-width: 700px){
+    font-size: 1em;
+    position: relative;
+    top: -3em;
+    width: 100%;
+    height: auto;
+    padding-top: 3.6em;
+    padding-bottom: 0.6em;
+    box-shadow: 0 -12px 12px 12px rgba(0,0,0,0.3);
+  }
 }
