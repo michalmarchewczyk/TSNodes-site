@@ -21,7 +21,7 @@ const Header = ({siteTitle, scroll}) => {
                 </div>
             </Link>
             <nav className={`${headerStyles.nav} ${open? headerStyles.navOpened : ''}`}>
-                <button onClick={() => setOpen(!open)}></button>
+                <button onClick={() => setOpen(!open)}> </button>
                 <Link to='/docs/install'>Install</Link>
                 <Link to='/docs/quick-start'>Documentation</Link>
                 <Link to='/examples'>Examples</Link>

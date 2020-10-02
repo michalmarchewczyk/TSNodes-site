@@ -3,7 +3,40 @@
   position: relative;
   margin-top: 6em;
   background: white;
-  height: 6em;
+  height: 4em;
   box-shadow: 0 20px 16px 16px rgba(0, 0, 0, 0.3);
   z-index: 1000;
+  padding: 1em 2em 1em;
+  font-size: 0.9em;
+  color: #666666;
+
+  span  {
+    display: block;
+    color: #444444;
+    float: none;
+    margin: 0.4em;
+
+    a {
+      font-weight: 600;
+    }
+  }
+
+ div {
+   position: absolute;
+   right: 1em;
+   top: 1em;
+   text-align: right;
+
+   span {
+     display: inline-block;
+     float: right;
+     margin: 0.4em 0.8em;
+   }
+
+   a {
+     font-weight: 600;
+   }
+ }
+
+
 }
