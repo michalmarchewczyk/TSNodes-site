@@ -32,13 +32,14 @@
     }
 
     a:nth-child(2) button {
-      background: rgb(29,114,242);
-      background: linear-gradient(300deg, rgba(29,114,242,1) 0%, rgba(59,173,255,1) 100%);
+      background: rgb(29, 114, 242);
+      background: linear-gradient(300deg, rgba(29, 114, 242, 1) 0%, rgba(59, 173, 255, 1) 100%);
       color: white;
       transition: background 0.05s linear;
+
       &:hover {
-        background: darken(rgb(29,114,242), 10);
-        background: linear-gradient(300deg, darken(rgba(29,114,242,1), 10) 0%, darken(rgba(59,173,255,1), 10) 100%);
+        background: darken(rgb(29, 114, 242), 10);
+        background: linear-gradient(300deg, darken(rgba(29, 114, 242, 1), 10) 0%, darken(rgba(59, 173, 255, 1), 10) 100%);
       }
     }
 
@@ -66,13 +67,13 @@
   }
 
 
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1200px) {
     img {
       display: none;
     }
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1000px) {
     div:first-child {
       top: calc(50% - 10em);
       left: 6em;
@@ -80,18 +81,19 @@
   }
 
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     div:first-child {
       top: calc(50% - 10em);
       left: 2em;
     }
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
     div:first-child {
       top: calc(50% - 10em);
       left: 2em;
       width: calc(100vw - 6.5em);
+
       h2 {
         font-size: 7.4vw;
       }
@@ -109,7 +111,6 @@
 
 
 }
-
 
 
 .section {
@@ -137,17 +138,16 @@
     clear: both;
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1000px) {
     left: 5em;
     width: calc(100vw - 10em);
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     left: 1em;
     width: calc(100vw - 2em);
   }
 }
-
 
 
 .example {
@@ -155,7 +155,7 @@
   position: relative;
   background: white;
   border-radius: 12px;
-  box-shadow: 4px 4px 16px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
   width: calc(50% - 6em);
   min-width: 14em;
   //height: 15em;
@@ -198,33 +198,35 @@
     }
 
     a:first-child {
-      background: rgb(29,114,242);
-      background: linear-gradient(300deg, rgba(29,114,242,1) 0%, rgba(59,173,255,1) 100%);
+      background: rgb(29, 114, 242);
+      background: linear-gradient(300deg, rgba(29, 114, 242, 1) 0%, rgba(59, 173, 255, 1) 100%);
       color: white;
       transition: background 0.05s linear;
+
       &:hover {
-        background: darken(rgb(29,114,242), 10);
-        background: linear-gradient(300deg, darken(rgba(29,114,242,1), 10) 0%, darken(rgba(59,173,255,1), 10) 100%);
+        background: darken(rgb(29, 114, 242), 10);
+        background: linear-gradient(300deg, darken(rgba(29, 114, 242, 1), 10) 0%, darken(rgba(59, 173, 255, 1), 10) 100%);
       }
     }
 
-    a:not(:first-child)  {
-      background: rgba(0,0,0,0);
+    a:not(:first-child) {
+      background: rgba(0, 0, 0, 0);
       transition: background 0.05s linear;
       color: #444444;
+
       &:hover {
-        background: rgba(0,0,0,0.1);
+        background: rgba(0, 0, 0, 0.1);
       }
     }
   }
 
-  @media screen and (max-width: 1400px){
+  @media screen and (max-width: 1400px) {
     p {
       padding-right: 2em;
     }
   }
 
-  @media screen and (max-width: 1300px){
+  @media screen and (max-width: 1300px) {
     min-width: auto;
     width: calc(100% - 6em);
   }

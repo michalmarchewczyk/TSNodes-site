@@ -58,7 +58,7 @@ const IndexPage = () => (
                 </p>
             </div>
             <div>
-    
+            
             </div>
         </section>
         <section className={indexStyles.container}>

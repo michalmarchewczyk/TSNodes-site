@@ -7,6 +7,7 @@ import SEO from '../components/seo';
 
 import notFoundStyles from './404.module.scss';
 
+
 const NotFoundPage = () => (
     <Layout>
         <SEO title='404 Not found'/>

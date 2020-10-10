@@ -20,8 +20,8 @@ const Header = ({siteTitle, scroll}) => {
                     <img src={logo} alt={siteTitle}/>
                 </div>
             </Link>
-            <nav className={`${headerStyles.nav} ${open? headerStyles.navOpened : ''}`}>
-                <button onClick={() => setOpen(!open)}> </button>
+            <nav className={`${headerStyles.nav} ${open ? headerStyles.navOpened : ''}`}>
+                <button onClick={() => setOpen(!open)}></button>
                 <Link to='/docs/install'>Install</Link>
                 <Link to='/docs/quick-start'>Documentation</Link>
                 <Link to='/examples'>Examples</Link>

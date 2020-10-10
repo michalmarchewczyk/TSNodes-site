@@ -10,7 +10,7 @@
   font-size: 0.9em;
   color: #666666;
 
-  span  {
+  span {
     display: block;
     color: #444444;
     float: none;
@@ -21,22 +21,22 @@
     }
   }
 
- div {
-   position: absolute;
-   right: 1em;
-   top: 1em;
-   text-align: right;
+  div {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    text-align: right;
 
-   span {
-     display: inline-block;
-     float: right;
-     margin: 0.4em 0.8em;
-   }
+    span {
+      display: inline-block;
+      float: right;
+      margin: 0.4em 0.8em;
+    }
 
-   a {
-     font-weight: 600;
-   }
- }
+    a {
+      font-weight: 600;
+    }
+  }
 
 
 }

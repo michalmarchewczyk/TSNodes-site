@@ -32,22 +32,24 @@
     }
 
     a:nth-child(2) button {
-      background: rgb(29,114,242);
-      background: linear-gradient(300deg, rgba(29,114,242,1) 0%, rgba(59,173,255,1) 100%);
+      background: rgb(29, 114, 242);
+      background: linear-gradient(300deg, rgba(29, 114, 242, 1) 0%, rgba(59, 173, 255, 1) 100%);
       color: white;
       transition: background 0.05s linear;
+
       &:hover {
-        background: darken(rgb(29,114,242), 10);
-        background: linear-gradient(300deg, darken(rgba(29,114,242,1), 10) 0%, darken(rgba(59,173,255,1), 10) 100%);
+        background: darken(rgb(29, 114, 242), 10);
+        background: linear-gradient(300deg, darken(rgba(29, 114, 242, 1), 10) 0%, darken(rgba(59, 173, 255, 1), 10) 100%);
       }
     }
 
     a:not(:nth-child(2)) button {
-      background: rgba(0,0,0,0);
+      background: rgba(0, 0, 0, 0);
       transition: background 0.05s linear;
       color: #444444;
+
       &:hover {
-        background: rgba(0,0,0,0.1);
+        background: rgba(0, 0, 0, 0.1);
       }
     }
 
@@ -75,17 +77,13 @@
   }
 
 
-
-
-
-
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1200px) {
     img {
       display: none;
     }
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1000px) {
     div:first-child {
       top: calc(50% - 10em);
       left: 6em;
@@ -93,18 +91,19 @@
   }
 
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     div:first-child {
       top: calc(50% - 10em);
       left: 2em;
     }
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
     div:first-child {
       top: calc(50% - 10em);
       left: 2em;
       width: calc(100vw - 5em);
+
       h2 {
         font-size: 7.4vw;
       }
@@ -163,25 +162,25 @@
     height: calc(100% - 4em);
   }
 
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1200px) {
     div:nth-child(2) {
       display: none;
     }
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1000px) {
     div:first-child {
       left: 6em;
     }
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     div:first-child {
       left: 2em;
     }
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
     div:first-child {
       left: 2em;
       width: calc(100vw - 4em);
@@ -200,7 +199,7 @@
   width: calc(100vw - 24em);
   background: white;
   border-radius: 12px;
-  box-shadow: 4px 4px 16px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 1em;
@@ -253,7 +252,7 @@
   }
 
 
-  @media screen and (max-width: 1300px){
+  @media screen and (max-width: 1300px) {
     div {
       p {
         padding-left: 1em;
@@ -262,16 +261,17 @@
     }
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1000px) {
     left: 6em;
     width: calc(100vw - 16em);
   }
 
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 900px) {
     padding-bottom: 2em;
     div {
       width: 100%;
       margin-bottom: 2em;
+
       img {
         width: 40%;
         float: left;
@@ -290,19 +290,20 @@
     }
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     left: 2em;
     width: calc(100vw - 6em);
     padding-left: 1em;
     padding-right: 1em;
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
 
     div {
       img {
         display: none;
       }
+
       p {
         padding-left: 0;
       }

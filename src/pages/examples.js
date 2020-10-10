@@ -8,6 +8,7 @@ import examplesIllustration from '../images/examplesIllustration.svg';
 
 import {Link} from 'gatsby';
 
+
 const Examples = () => (
     <Layout>
         <SEO title='Examples'/>
