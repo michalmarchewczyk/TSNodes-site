@@ -158,11 +158,24 @@
     top: 2em;
     //outline: 1px solid red;
     right: 8em;
-    width: 30em;
+    width: 18em;
     height: calc(100% - 4em);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1600px) {
+    div:nth-child(2) {
+      right: auto;
+      left: calc(50% + 2em);
+      width: 22em;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
     div:nth-child(2) {
       display: none;
     }

@@ -8,6 +8,8 @@ import heroIllustration from '../images/heroIllustration.svg';
 import featIllustration1 from '../images/featIllustration1.svg';
 import featIllustration2 from '../images/featIllustration2.svg';
 import featIllustration3 from '../images/featIllustration3.svg';
+import aboutIllustration from '../images/about.svg';
+import logo from '../images/logo.svg';
 
 import indexStyles from './index.module.scss';
 
@@ -45,7 +47,7 @@ const IndexPage = () => (
                 </p>
             </div>
             <div>
-            
+                <img src={aboutIllustration} alt=''/>
             </div>
         </section>
         <section id='about' className={indexStyles.section}>
@@ -58,7 +60,7 @@ const IndexPage = () => (
                 </p>
             </div>
             <div>
-            
+                <img src={logo} alt=''/>
             </div>
         </section>
         <section className={indexStyles.container}>
