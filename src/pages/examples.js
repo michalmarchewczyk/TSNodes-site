@@ -17,7 +17,7 @@ const Examples = () => (
                 <h2>
                     How TSNodes library is used in various applications
                 </h2>
-                <Link to='/#examples'>
+                <Link to='/examples/#examples'>
                     <button>
                         See examples
                     </button>
@@ -27,7 +27,7 @@ const Examples = () => (
                 <img src={examplesIllustration} alt=''/>
             </div>
         </section>
-        <section className={examplesStyles.section}>
+        <section className={examplesStyles.section} id='examples'>
             <h2>Demos</h2>
             <div className={examplesStyles.example}>
                 <h3>
